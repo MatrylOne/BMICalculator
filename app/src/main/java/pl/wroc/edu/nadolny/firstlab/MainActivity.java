@@ -95,14 +95,18 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.shareButton:
                 shareResults();
+                break;
             case R.id.authorButton:
                 Intent i = new Intent(getApplicationContext(),AuthorActivity.class);
                 startActivity(i);
+                break;
             case R.id.saveButton:
                 saveToROM();
+                break;
             default:
                 return super.onOptionsItemSelected(item);
         }
+        return true;
     }
 
     CompoundButton.OnCheckedChangeListener switchListener = new CompoundButton.OnCheckedChangeListener() {
