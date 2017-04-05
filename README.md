@@ -1,2 +1,2 @@
-# PsiPatrol
-## Daje w kość BMI
+#Kalkulator BMI
+##Autor: Jakub Nadolny
