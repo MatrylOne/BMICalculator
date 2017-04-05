@@ -1,2 +1,2 @@
-#Kalkulator BMI
-##Autor: Jakub Nadolny
+# Kalkulator BMI
+## Autor: Jakub Nadolny
