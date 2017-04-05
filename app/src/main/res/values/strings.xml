@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">BMI - Jakub Nadolny</string>
+    <string name="give_mass">Wpisz wagę</string>
+    <string name="give_height">Wpisz wzrost</string>
+    <string name="count_bmi">Oblicz BMI</string>
+    <string name="switch_label">Tryb amerykański</string>
+    <string name="kg_label">kg</string>
+    <string name='lbs_label'>lbs</string>
+    <string name="m_label">m</string>
+    <string name='inch_label'>inch</string>
+    <string name='author'>Jakub Nadolny</string>
+    <string name='badValues'>Niepoprawne wartości.</string>
+    <string name='shareNotCounted'>Nie obliczyłem jeszcze swojego BMI.</string>
+    <string name='shareMassOK'>Moja waga jest w normie.</string>
+    <string name='shareUnderweight'>Mam niedowagę.</string>
+    <string name='shareOverweight'>Mam niedowagę.</string>
+
+</resources>

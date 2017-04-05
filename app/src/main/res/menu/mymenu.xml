@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/saveButton"
+        android:title="Save"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/shareButton"
+        android:actionProviderClass="android.widget.ShareActionProvider"
+        android:title="Share"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/authorButton"
+        android:title="Authors"
+        app:showAsAction="always" />
+
+
+</menu>
