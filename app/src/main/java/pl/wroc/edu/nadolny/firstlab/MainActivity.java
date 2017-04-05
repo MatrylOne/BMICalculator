@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
             float mass = StringToFloat(massTxt.getText().toString());
             float height = StringToFloat(heightTxt.getText().toString());
 
-            lastBMI = Math.round(BmiModel.countBMI(mass, height) * 10) / 10;
+            lastBMI = ((float)Math.round(BmiModel.countBMI(mass, height)*100))/100;
             isCounted = true;
 
             returnTxt.setTextColor(valueToColor(lastBMI));
@@ -130,9 +130,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private MassStatus bmiComparator(float value){
-        if(value > 20 && value < 27) {
+        if(value >= 20 && value < 27) {
             return MassStatus.OK;
-        }else if(value <= 20){
+        }else if(value < 20){
             return MassStatus.UNDERWEIGHT;
         }else{
             return MassStatus.OVERWEIGHT;
@@ -145,6 +145,7 @@ public class MainActivity extends AppCompatActivity {
         massTxt.setText(sharedPref.getString("savedMass", ""));
         returnTxt.setText(sharedPref.getString("savedResult", ""));
         returnTxt.setTextColor(sharedPref.getInt("savedColor", 0));
+        isCounted = sharedPref.getBoolean("savedBinary", false);
     }
 
     private void saveToROM(){
@@ -154,6 +155,7 @@ public class MainActivity extends AppCompatActivity {
         editor.putString("savedHeight", heightTxt.getText().toString());
         editor.putString("savedResult", returnTxt.getText().toString());
         editor.putInt("savedColor", returnTxt.getCurrentTextColor());
+        editor.putBoolean("savedBinary", isCounted);
 
         editor.commit();
     }
