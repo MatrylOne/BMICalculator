@@ -1,2 +1,2 @@
-# Kalkulator BMI
-## Autor: Jakub Nadolny
+# BMI Calculator
+Basic Android BMI Calculator
